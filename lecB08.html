@@ -423,7 +423,7 @@ window.Quarto = {
 ・クロス集計表での独立性の検定、相関係数、エクセルのデータ分析機能「相関」を用いた分析</p>
 <section id="カイ二乗chi2検定" class="level2" data-number="21.1">
 <h2 data-number="21.1" class="anchored" data-anchor-id="カイ二乗chi2検定"><span class="header-section-number">21.1</span> カイ二乗（<span class="math inline">\(\chi^2\)</span>）検定</h2>
-<p>クロス集計表に分類されるような質的データ（連続していないデータ）について、分類基準の間に関連があるかどうかを検定します（割合の違いに意味があるのかを調べます）。<strong>独立性の検定</strong>ともいいます。</p>
+<p>クロス集計表に分類されるような質的データ（性別や好き嫌いのように、カテゴリーで表されるデータ）について、分類基準の間に関連があるかどうかを検定します（割合の違いに意味があるのかを調べます）。<strong>独立性の検定</strong>ともいいます。</p>
 <p><strong>具体例</strong></p>
 <p>「猫が好きかどうか」を、ある標本の男女に聞き取りを行ったところ、以下のような結果が得られました。母集団における「猫好き」の割合は、男女で違いがあるでしょうか。</p>
 <table class="caption-top table">
@@ -617,10 +617,10 @@ window.Quarto = {
 <li>帰無仮説（<span class="math inline">\(H_0\)</span>）：性別と、猫が好きかどうかは関連しない（2つの変数は独立である）</li>
 <li>対立仮説（<span class="math inline">\(H_1\)</span>）：性別と、猫が好きかどうかは関連する（2つの変数は独立ではない）</li>
 </ul>
-<p><span class="orange"><strong>手順2：有意水準（臨界値）を決める</strong></span></p>
+<p><span class="orange"><strong>手順2：有意水準を決める（これで臨界値が決まる）</strong></span></p>
 <p>有意水準は5%とします。</p>
 <p><span class="orange"><strong>手順3：検定統計量 <span class="math inline">\(\chi^2\)</span> を求める</strong></span></p>
-<p><span class="math inline">\(\chi^2\)</span> 検定では、「実測値」と「期待値」のズレが、誤差の範囲といえるのか、それとも確率的にあり得ないズレなのか（有意な差なのか）を検定します。次の統計量は、以下の自由度のカイ二乗分布に従います。</p>
+<p><span class="math inline">\(\chi^2\)</span> 検定では、「実測値」と「期待値」のズレが、誤差の範囲といえるのか、それとも確率的にあり得ないズレなのか（有意な差なのか）を検定します。帰無仮説が正しいとき、次の統計量は、以下の自由度のカイ二乗分布に（近似的に）従います。</p>
 <p><span class="math display">\[
 \chi^2 = \sum \frac{(\text{実測値} - \text{期待値})^2}{\text{期待値}}
 \]</span></p>
@@ -821,7 +821,10 @@ window.Quarto = {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>期待値が小さいセル（目安として5未満）があると、<span class="math inline">\(\chi^2\)</span> の値がカイ二乗分布にうまく従わず、検定の結果が正確でなくなります。その場合は、カテゴリーをまとめる、標本を増やす、別の検定（フィッシャーの正確確率検定など）を使う、といった対応が必要です。</li>
+<li>期待値が小さいセル（目安として5未満）があると、<span class="math inline">\(\chi^2\)</span> の値がカイ二乗分布にうまく従わず、検定の結果が正確でなくなります。その場合は、カテゴリーをまとめる、標本を増やす、別の検定（フィッシャーの正確確率検定など）を使う、といった対応が必要です。
+<ul>
+<li>参考：<a href="https://best-biostatistics.com/contingency/fisher-exact.html">いちばんやさしい、医療統計（フィッシャーの正確確率検定とは？カイ二乗検定との違いをわかりやすく）</a></li>
+</ul></li>
 <li><span class="math inline">\(\chi^2\)</span> 検定は、実測値（人数などの度数）を使って計算します。割合（%）のまま計算してはいけません。</li>
 <li>統計ソフトによっては、2行2列の表のときに「イェーツの補正」という調整を自動で行うため、エクセルの結果と少し異なる値が出ることがあります。</li>
 </ul>
@@ -830,53 +833,58 @@ window.Quarto = {
 </section>
 <section id="エクセルでの-chi2-検定" class="level2" data-number="21.6">
 <h2 data-number="21.6" class="anchored" data-anchor-id="エクセルでの-chi2-検定"><span class="header-section-number">21.6</span> エクセルでの <span class="math inline">\(\chi^2\)</span> 検定</h2>
-<p>例1のデータを、次のようにエクセルに入力したとします。</p>
+<p>例1のデータを、課題ファイルの「練習_1」と同じように、次のようにエクセルに入力したとします。</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;"></th>
-<th style="text-align: center;">A</th>
 <th style="text-align: center;">B</th>
 <th style="text-align: center;">C</th>
 <th style="text-align: center;">D</th>
+<th style="text-align: center;">E</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;">好き</td>
+<td style="text-align: center;">猫好き</td>
 <td style="text-align: center;">好きではない</td>
 <td style="text-align: center;">合計</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
 <td style="text-align: center;">男性</td>
 <td style="text-align: center;">24</td>
 <td style="text-align: center;">26</td>
-<td style="text-align: center;"><code>=SUM(B3:C3)</code></td>
+<td style="text-align: center;"><code>=C5+D5</code></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
 <td style="text-align: center;">女性</td>
 <td style="text-align: center;">28</td>
 <td style="text-align: center;">22</td>
-<td style="text-align: center;"><code>=SUM(B4:C4)</code></td>
+<td style="text-align: center;"><code>=C6+D6</code></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">5</td>
+<td style="text-align: center;">7</td>
 <td style="text-align: center;">合計</td>
-<td style="text-align: center;"><code>=SUM(B3:B4)</code></td>
-<td style="text-align: center;"><code>=SUM(C3:C4)</code></td>
-<td style="text-align: center;"><code>=SUM(D3:D4)</code></td>
+<td style="text-align: center;"><code>=C5+C6</code></td>
+<td style="text-align: center;"><code>=D5+D6</code></td>
+<td style="text-align: center;"><code>=E5+E6</code></td>
 </tr>
 </tbody>
 </table>
 <p><strong>期待値の表を作る</strong></p>
-<p>別の場所（F3〜G4）に期待値の表を作ります。F3セルに次の式を入力し、F3〜G4にコピーします（「行の合計 × 列の合計 ÷ 全体の合計」を計算しています）。</p>
-<pre><code>=$D3*B$5/$D$5</code></pre>
+<p>その下（C12〜D13）に期待値の表を作ります。C12セルに次の式を入力し、C12〜D13にコピーします（「行の合計 × 列の合計 ÷ 全体の合計」を計算しています）。</p>
+<pre><code>=$E5*C$7/$E$7</code></pre>
 <p><strong>関数で計算する</strong></p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 30%">
+<col style="width: 38%">
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">求めるもの</th>
@@ -887,12 +895,12 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">P値</td>
-<td style="text-align: left;"><code>=CHISQ.TEST(B3:C4, F3:G4)</code></td>
+<td style="text-align: left;"><code>=CHISQ.TEST(C5:D6, C12:D13)</code></td>
 <td style="text-align: center;">0.423</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">検定統計量 <span class="math inline">\(\chi^2\)</span></td>
-<td style="text-align: left;"><code>=SUMPRODUCT((B3:C4-F3:G4)^2/F3:G4)</code></td>
+<td style="text-align: left;"><code>=SUMPRODUCT((C5:D6-C12:D13)^2/C12:D13)</code></td>
 <td style="text-align: center;">0.641</td>
 </tr>
 <tr class="odd">
@@ -1085,6 +1093,7 @@ r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\dfrac{1}{n}\displaystyle\sum_{i=1}^{n}(
 </figcaption>
 </figure>
 </div>
+<p>参考：<a href="https://dalab.jp/mag/methods/correlation_analysis/">データの特徴を把握できる相関係数と相関分析を徹底解説！（DATA ANALYTICS LABO）</a></p>
 </section>
 <section id="留意点-1-見せかけの相関擬似相関" class="level2" data-number="21.13">
 <h2 data-number="21.13" class="anchored" data-anchor-id="留意点-1-見せかけの相関擬似相関"><span class="header-section-number">21.13</span> 留意点 1　見せかけの相関（擬似相関）</h2>
@@ -1152,7 +1161,7 @@ r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\dfrac{1}{n}\displaystyle\sum_{i=1}^{n}(
 <li>帰無仮説（<span class="math inline">\(H_0\)</span>）：母相関係数 <span class="math inline">\(\rho = 0\)</span>（両変数の間には相関がない・無相関）</li>
 <li>対立仮説（<span class="math inline">\(H_1\)</span>）：母相関係数 <span class="math inline">\(\rho \neq 0\)</span>（両変数の間には相関がある）</li>
 </ul>
-<p><span class="orange"><strong>手順2：有意水準（臨界値）を決める</strong></span></p>
+<p><span class="orange"><strong>手順2：有意水準を決める（これで臨界値が決まる）</strong></span></p>
 <p>有意水準は5%（両側検定）とします。</p>
 <p><span class="orange"><strong>手順3：検定統計量 <span class="math inline">\(t\)</span> を求める</strong></span></p>
 <p><span class="math inline">\(\rho = 0\)</span> のとき、標本の相関係数 <span class="math inline">\(r\)</span> から計算した次の統計量は、自由度 <span class="math inline">\(n - 2\)</span> の <span class="math inline">\(t\)</span> 分布に従います。</p>
@@ -1250,6 +1259,19 @@ t = \frac{r\sqrt{n - 2}}{\sqrt{1 - r^2}} = \frac{0.684 \times \sqrt{10 - 2}}{\sq
 <li><span class="math inline">\(t = 2.653\)</span> は臨界値2.306より大きく、P値0.029は有意水準0.05より小さいので、帰無仮説は棄却されます。</li>
 <li>結論：「勉強時間とテストの点数の間には相関がある（有意水準5%）」となります。</li>
 </ul>
+<div class="my-note callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>「有意」は「相関が強い」という意味ではない
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>検定統計量 <span class="math inline">\(t = \dfrac{r\sqrt{n - 2}}{\sqrt{1 - r^2}}\)</span> は、<span class="math inline">\(n\)</span> が大きいほど大きくなります。そのため、データの個数が多いと、小さな相関係数でも有意になります。例えば <span class="math inline">\(n = 682\)</span> なら、<span class="math inline">\(|r|\)</span> が0.075程度でも有意水準5%で有意です。検定の結果だけでなく、相関係数の大きさ（相関の強さ）も必ず確認しましょう。</p>
+</div>
+</div>
 <div class="my-note callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
