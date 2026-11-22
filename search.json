@@ -996,67 +996,67 @@
   {
     "objectID": "lecB03.html",
     "href": "lecB03.html",
-    "title": "16  (3) 大数の法則・中心極限定理",
+    "title": "16  (3) 基本定理",
     "section": "",
-    "text": "16.1 大数の法則\n「サンプルサイズ \\(n\\) を大きくすると、何が起きるのか？」 本講義では、統計的推論を支える2つの巨大な柱である「大数の法則」と「中心極限定理」について学びます。\nLaw of Large Numbers",
+    "text": "16.1 大数の法則\n大数の法則・中心極限定理\n「サンプルサイズ \\(n\\) を大きくすると、何が起きるのか？」 本講義では、統計的推論を支える2つの巨大な柱である「大数の法則」と「中心極限定理」について学びます。\nLaw of Large Numbers",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 大数の法則・中心極限定理</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 基本定理</span>"
     ]
   },
   {
     "objectID": "lecB03.html#大数の法則",
     "href": "lecB03.html#大数の法則",
-    "title": "16  (3) 大数の法則・中心極限定理",
+    "title": "16  (3) 基本定理",
     "section": "",
     "text": "サンプルサイズ \\(n\\) を大きくしていくと、標本平均 \\(\\bar{X}\\) のばらつき（標準誤差）が小さくなり、標本平均 \\(\\bar{X}\\) は母平均 \\(\\mu\\) に限りなく近づいていくという法則です。\n標本の大きさ（サンプルサイズ）\\(n\\) が大きい方が、その平均値 \\(\\bar{x}\\) は母集団の平均値 \\(\\mu\\) に近くなる。\n\n\n\n\n\n\n\n\n\n\n図 16.1\n\n\n\n\n\n\n\n\n\nNote標準誤差（復習・後期第2回）\n\n\n\n標本平均のばらつき（標準偏差）が大きいほど、1回の標本から求めた平均が母平均から外れやすくなります。そこで、このばらつき（標本の統計量の標準偏差）を推定量の誤差を示すと考えて、標準誤差 と呼びます。\n\\[\n\\text{標準誤差} = {\\frac{s}{\\sqrt{n}}} \\quad （\\text{不偏分散の平方根} \\div \\text{標本サイズの平方根}）\n\\]",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 大数の法則・中心極限定理</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 基本定理</span>"
     ]
   },
   {
     "objectID": "lecB03.html#演習-1",
     "href": "lecB03.html#演習-1",
-    "title": "16  (3) 大数の法則・中心極限定理",
+    "title": "16  (3) 基本定理",
     "section": "16.2 演習 1",
     "text": "16.2 演習 1\nコインを100枚投げてみよう\n\nコインを100枚投げ、それぞれ表なら 1、裏なら 0 を記録します。\n\\(n = 1\\)（コイン1枚）の場合から、\\(n = 100\\)（コイン100枚）の場合まで、それぞれ表の出る割合を求めます。\n\n\n\n\n\n\n\n\n\n\n\n項目\nこの演習での意味\n\n\n\n\n母集団\n無限枚のコインを投げた時の結果（0 or 1）  ↑ 調べられません\n\n\n母集団の平均 \\(\\mu\\)\n理論的には 0.5 になります\n\n\n標本\n有限枚のコインを投げた時の結果（0 or 1）  ↑ 標本で調査します\n\n\n標本の大きさ \\(n\\)\n\\(n = 1\\) から \\(n = 100\\)  ↑ 1枚ずつ増やして100通り調査します\n\n\n標本平均\n表の出る割合\n\n\n\n\n\n\n10枚程度では表の割合が 30% や 70% に偏ることがありますが、枚数 \\(n\\) を増やすほど、理論的な確率である 50%（0.5）に近づいていきます。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 大数の法則・中心極限定理</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 基本定理</span>"
     ]
   },
   {
     "objectID": "lecB03.html#演習-2",
     "href": "lecB03.html#演習-2",
-    "title": "16  (3) 大数の法則・中心極限定理",
+    "title": "16  (3) 基本定理",
     "section": "16.3 演習 2",
     "text": "16.3 演習 2\nサイコロを10,000個振ってみよう\n\nサイコロを10,000個振り、出た目を記録します。\n\\(n = 1\\)（サイコロ1個）の場合から、\\(n = 10{,}000\\)（サイコロ10,000個）の場合まで、それぞれ出た目の平均を求めます。\n\n\n\n\n\n\n\n\n\n\n\n項目\nこの演習での意味\n\n\n\n\n母集団\n無限個のサイコロを振った時の結果 ↑ 調べられません\n\n\n母集団の平均 \\(\\mu\\)\n理論的には ??? になります\n\n\n標本\n有限個のサイコロを振った時の結果 ↑ 標本で調査します\n\n\n標本の大きさ \\(n\\)\n\\(n = 1\\) から \\(n = 10{,}000\\) ↑ サイコロの数を変えて調査します\n\n\n標本平均\n出た目の平均\n\n\n\n\n\n\n母集団の平均 \\(\\mu\\) がいくつになるかは、Excel の「サイコロの理論値」シートで確かめましょう。出た目の平均は、サイコロの数 \\(n\\) が増えるほど、この \\(\\mu\\) に近づいていきます。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 大数の法則・中心極限定理</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 基本定理</span>"
     ]
   },
   {
     "objectID": "lecB03.html#中心極限定理",
     "href": "lecB03.html#中心極限定理",
-    "title": "16  (3) 大数の法則・中心極限定理",
+    "title": "16  (3) 基本定理",
     "section": "16.4 中心極限定理",
     "text": "16.4 中心極限定理\nCentral Limit Theorem: CLT\n母集団がどのような分布であっても、そこから抽出した標本平均 \\(\\bar{X}\\) の分布は、サンプルサイズ \\(n\\) が十分に大きければ正規分布に近づくという定理です。\n\n近づく先は、平均 \\(\\mu\\)、分散 \\(\\sigma^2/n\\) の正規分布 \\(N\\left(\\mu, \\dfrac{\\sigma^2}{n}\\right)\\) です（\\(\\mu\\), \\(\\sigma^2\\) は母平均・母分散）。\n平均と分散は、前回学んだ \\(E(\\bar{X}) = \\mu\\)、\\(V(\\bar{X}) = \\sigma^2/n\\) と同じです。\n\\(n\\) が大きいほど分散 \\(\\sigma^2/n\\) は小さくなるので、山は \\(\\mu\\) のまわりで細くなります（これが大数の法則です）。\n\n\n\n\n\n\n\nNote母分散が未知の場合（復習・後期第2回）\n\n\n\n母分散 \\(\\sigma^2\\) が未知の場合、\\(\\sigma^2\\) を不偏分散 \\(s^2\\) で置き換えて（標準誤差 \\(\\dfrac{s}{\\sqrt{n}}\\) を使って）標準化すると、正規分布ではなく、（母集団が正規分布の場合）自由度 \\(n-1\\) の \\(t\\) 分布に従います（詳しくは後期第4回）。なお、\\(n\\) が大きいと \\(t\\) 分布は正規分布とほぼ同じになります。\n\n\n\n\n\n\n\n\n\n\n\n図 16.2\n\n\n\n\n16.4.1 CLTの驚くべき特徴\n元の分布を問わない\n母集団が「一様分布」でも「二項分布」でも、あるいは「非常に偏った分布」であっても構いません。\n図解：統計ブログ\n\n\n16.4.2 なぜこれが重要なのか？\n中心極限定理があるおかげで、私たちは母集団の正確な形を知らなくても、サンプルサイズさえ十分に大きければ（一般に \\(n \\ge 30\\) 程度が目安）、正規分布を前提とした統計的推測（信頼区間の計算や仮説検定）を行うことができるのです。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 大数の法則・中心極限定理</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 基本定理</span>"
     ]
   },
   {
     "objectID": "lecB03.html#演習-3",
     "href": "lecB03.html#演習-3",
-    "title": "16  (3) 大数の法則・中心極限定理",
+    "title": "16  (3) 基本定理",
     "section": "16.5 演習 3",
     "text": "16.5 演習 3\n中心極限定理\n\n以下のように標本の大きさ \\(n\\)（サンプルサイズ）が異なる調査を実施し、それらの標本平均の分布を求めます。\nこの「標本平均の分布」は、\\(n\\) が十分に大きい場合には（一回に振るサイコロの数が多い場合には）、正規分布に近くなります。\n\n\n\n\n\n\\(n = 1\\)（サイコロ1個）の標本で1,000回調査した場合\n\\(n = 2\\)（サイコロ2個）の標本で1,000回調査した場合\n\\(n = 10\\)（サイコロ10個）の標本で1,000回調査した場合\n\\(n = 30\\)（サイコロ30個）の標本で1,000回調査した場合\n\n\n\n\n正規分布に近づくかどうかを決めるのは、1回の調査で振るサイコロの数 \\(n\\) です。\n調査を繰り返す回数（ここでは1,000回）は、分布の形を描くためのものです。\n\n\n\n実際にサイコロを振るのは難しいので、エクセルで擬似的にサイコロを振ります（ランダムな1から6のデータを生成します）。そして、その平均値がどのように振る舞うかを視覚化します。\n\n乱数の生成: =RANDBETWEEN(1, 6) を使って、1から6までの整数をランダムに生成します。\n平均値の算出: 異なる標本の大きさ \\(n\\)（サンプルサイズ）（\\(n=1, 2, 10, 30\\)）で標本平均を1,000回ずつ計算します。\nヒストグラムの作成: 計算した標本平均の分布をヒストグラムで描き、山型の正規分布に近づく様子を確認します。\n\n\n\n\nコードを表示\nviewof k = Inputs.select([1, 2, 3, 5, 10, 30, 100, 1000], {value: 1, label: \"サイコロ数 n\"})\nviewof reps = Inputs.select([1, 100, 1000, 10000], {value: 1, label: \"繰り返し回数\"})\nviewof speed = Inputs.select(new Map([[\"1回ずつ\", 1], [\"10回ずつ\", 10], [\"100回ずつ\", 100]]),\n                             {value: 1, label: \"表示の速さ\"})\nviewof go = Inputs.button(\"サイコロを振る\", {\n  value: null,\n  reduce: () =&gt; ({k: k, reps: reps, speed: speed})\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nコードを表示\nsims = {\n  // ボタンが押されるまでは空のまま\n  if (go === null) {\n    yield {i: 0, last: null, meanOfMeans: null, w: 1 / k, data: []};\n    return;\n  }\n  const n = go.k;\n  const w = Math.max(1 / n, 0.02);  // 棒の幅（n が大きいときは 0.02 ごとにまとめる）\n  const counts = new Map();\n  let last = null;\n  let total = 0;  // 標本平均の合計\n  for (let i = 1; i &lt;= go.reps; i++) {\n    let s = 0;\n    for (let j = 0; j &lt; n; j++) s += Math.floor(Math.random() * 6) + 1;\n    last = s / n;\n    total += last;\n    const key = Math.round(last / w);\n    counts.set(key, (counts.get(key) || 0) + 1);\n    if (i % go.speed === 0 || i === go.reps) {\n      yield {\n        i: i,\n        last: last,\n        meanOfMeans: total / i,\n        w: w,\n        data: Array.from(counts, ([key, c]) =&gt; ({v: key * w, n: c}))\n      };\n    }\n  }\n}\n\nsims.i === 0\n  ? md`「サイコロを振る」ボタンを押すと、サイコロを振り始めます。`\n  : md`**${sims.i.toLocaleString()} 回目**　今回の標本平均：${sims.last.toFixed(2)}　標本平均の平均：${sims.meanOfMeans.toFixed(2)}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nコードを表示\nPlot.plot({\n  x: {domain: [0.5, 6.5], label: \"出た目の平均（標本平均）\"},\n  y: {label: \"度数\", grid: true, domain: sims.i === 0 ? [0, 10] : undefined},\n  marks: [\n    Plot.rectY(sims.data, {\n      x1: d =&gt; d.v - sims.w / 2,\n      x2: d =&gt; d.v + sims.w / 2,\n      y: d =&gt; d.n,\n      fill: \"steelblue\",\n      inset: sims.w &gt;= 0.1 ? 0.5 : 0\n    }),\n    Plot.ruleX(sims.last === null ? [] : [sims.last], {stroke: \"#E36C09\", strokeWidth: 2}),\n    Plot.ruleX(sims.meanOfMeans === null ? [] : [sims.meanOfMeans],\n               {stroke: \"black\", strokeWidth: 1.5, strokeDasharray: \"4,3\"}),\n    Plot.ruleY([0])\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\n補足：Excel で確かめる目安\nサイコロの1〜6の目はどれも確率 1/6 で出るので、6つの目を母集団のすべての値とみなして、母平均と母分散を求めます。\n\\[\n\\mu = \\frac{1+2+3+4+5+6}{6} = \\frac{21}{6} = 3.5\n\\]\n注意：ここでは母集団のすべての値から求めるので、\\(n-1\\) ではなく 6 で割ります（不偏分散ではなく分散）。Excel では =VAR.P(1,2,3,4,5,6)、=STDEV.P(1,2,3,4,5,6) で確かめられます。\n\\[\n\\begin{aligned}\n\\sigma^2 &= \\frac{(1-3.5)^2 + (2-3.5)^2 + \\cdots + (6-3.5)^2}{6} \\\\\n&= \\frac{6.25 + 2.25 + 0.25 + 0.25 + 2.25 + 6.25}{6} = \\frac{17.5}{6} \\approx 2.92\n\\end{aligned}\n\\]\n\\[\n\\sigma = \\sqrt{17.5/6} \\approx 1.71\n\\]\n中心極限定理から、標本平均 \\(\\bar{X}\\) の分布は平均 3.5 のまわりに集まり、その標準偏差は \\(\\sigma/\\sqrt{n}\\) になります。\n\n\n\n\\(n\\)\n1\n2\n10\n30\n\n\n\n\n\\(\\sqrt{n}\\)\n1\n1.41\n3.16\n5.48\n\n\n標本平均の標準偏差 \\(\\sigma/\\sqrt{n}\\)\n1.71\n1.21\n0.54\n0.31\n\n\n\n1,000回分の標本平均の標準偏差 =STDEV.P( ) を求めて、この値に近いか確かめてみましょう。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 大数の法則・中心極限定理</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>(3) 基本定理</span>"
     ]
   },
   {
@@ -1480,199 +1480,199 @@
   {
     "objectID": "lecB08.html",
     "href": "lecB08.html",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "",
     "text": "21.1 カイ二乗（\\(\\chi^2\\)）検定\n2つの変数の間に関係があるかどうかをどう判断するか？\n・\\(\\chi^2\\) 検定、相関係数、相関分析\n・クロス集計表での独立性の検定、相関係数、エクセルのデータ分析機能「相関」を用いた分析\nクロス集計表に分類されるような質的データ（性別や好き嫌いのように、カテゴリーで表されるデータ）について、分類基準の間に関連があるかどうかを検定します（割合の違いに意味があるのかを調べます）。独立性の検定ともいいます。\n具体例\n「猫が好きかどうか」を、ある標本の男女に聞き取りを行ったところ、以下のような結果が得られました。母集団における「猫好き」の割合は、男女で違いがあるでしょうか。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#カイ二乗chi2検定",
     "href": "lecB08.html#カイ二乗chi2検定",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "",
     "text": "好き\n好きではない\n合計\n\n\n\n\n男性\n24\n26\n50\n\n\n女性\n28\n22\n50\n\n\n合計\n52\n48\n100",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#実測値と期待値理論値",
     "href": "lecB08.html#実測値と期待値理論値",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.2 実測値と期待値（理論値）",
     "text": "21.2 実測値と期待値（理論値）\n\\(\\chi^2\\) 検定では、実際に得られた値（実測値）と、「性別と猫好きかどうかに関係がない」としたときに期待される値（期待値、理論値）を比べます。\n例1\nもし性別と猫好きかどうかに関係がなければ、「好き」の52人は、男性と女性に全体の人数の割合（男性50%、女性50%）で分かれるはずです。\n\\[\n\\text{男性で「好き」の期待値} = \\text{「好き」の人数} \\times \\text{男性の割合} = 52 \\times \\frac{50}{100} = 26\n\\]\n\n\n実測値\n\n\n\n\n好き\n好きではない\n合計\n\n\n\n\n男性\n24\n26\n50\n\n\n女性\n28\n22\n50\n\n\n合計\n52\n48\n100\n\n\n\n\n期待値（理論値）\n\n\n\n\n好き\n好きではない\n合計\n\n\n\n\n男性\n26\n24\n50\n\n\n女性\n26\n24\n50\n\n\n合計\n52\n48\n100\n\n\n\n\n\n例2\n男女の人数が異なる場合も、同じ考え方で期待値を計算できます。男性の割合は \\(\\dfrac{30}{80} = 0.375\\)、女性の割合は \\(\\dfrac{50}{80} = 0.625\\) です。\n\\[\n\\text{男性で「好き」の期待値} = \\text{「好き」の人数} \\times \\text{男性の割合} = 42 \\times \\frac{30}{80} = 15.75\n\\]\n\n\n実測値\n\n\n\n\n好き\n好きではない\n合計\n\n\n\n\n男性\n14\n16\n30\n\n\n女性\n28\n22\n50\n\n\n合計\n42\n38\n80\n\n\n\n\n期待値（理論値）\n\n\n\n\n好き\n好きではない\n合計\n\n\n\n\n男性\n15.75\n14.25\n30\n\n\n女性\n26.25\n23.75\n50\n\n\n合計\n42\n38\n80\n\n\n\n\n\n一般に、各セルの期待値は次の式で求められます。\n\\[\n\\text{期待値} = \\frac{\\text{そのセルの行の合計} \\times \\text{そのセルの列の合計}}{\\text{全体の合計}}\n\\]",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#chi2-検定の手順",
     "href": "lecB08.html#chi2-検定の手順",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.3 \\(\\chi^2\\) 検定の手順",
     "text": "21.3 \\(\\chi^2\\) 検定の手順\n前回までに学んだ仮説検定の手順に沿って、\\(\\chi^2\\) 検定を行います。\n手順1：仮説を設定する\n\n帰無仮説（\\(H_0\\)）：性別と、猫が好きかどうかは関連しない（2つの変数は独立である）\n対立仮説（\\(H_1\\)）：性別と、猫が好きかどうかは関連する（2つの変数は独立ではない）\n\n手順2：有意水準を決める（これで臨界値が決まる）\n有意水準は5%とします。\n手順3：検定統計量 \\(\\chi^2\\) を求める\n\\(\\chi^2\\) 検定では、「実測値」と「期待値」のズレが、誤差の範囲といえるのか、それとも確率的にあり得ないズレなのか（有意な差なのか）を検定します。帰無仮説が正しいとき、次の統計量は、以下の自由度のカイ二乗分布に（近似的に）従います。\n\\[\n\\chi^2 = \\sum \\frac{(\\text{実測値} - \\text{期待値})^2}{\\text{期待値}}\n\\]\nここで、\\(\\sum\\) は、クロス集計表のすべてのセルについて合計することを表します（2行2列の表なら4つのセルの合計です）。\n\n自由度\n\n（1つ目の変数のカテゴリーの数 \\(-\\) 1）\\(\\times\\)（2つ目の変数のカテゴリーの数 \\(-\\) 1）\nつまり、（クロス集計表の行の数 \\(-\\) 1）\\(\\times\\)（クロス集計表の列の数 \\(-\\) 1）\n今回の例では、\\((2 - 1) \\times (2 - 1) = 1\\) です。\n\n\n実測値と期待値のズレが大きいほど、\\(\\chi^2\\) の値は大きくなります。そのため、\\(\\chi^2\\) 検定では、分布の右側（値が大きい側）だけに棄却域を置きます。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#カイ二乗分布",
     "href": "lecB08.html#カイ二乗分布",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.4 カイ二乗分布",
     "text": "21.4 カイ二乗分布\nカイ二乗分布は、自由度によって形が変わります。自由度と \\(\\chi^2\\) の値を変えて、分布の形、臨界値（有意水準5%）、P値がどう変わるかを確かめてみましょう。初期値は、例1の \\(\\chi^2 = 0.641\\)（自由度1）です。\n\n\nコードを表示\nviewof dfC = Inputs.select([1, 2, 3, 4, 5, 10], {value: 1, label: \"自由度\"})\nviewof chiC = Inputs.range([0, 20], {step: 0.01, value: 0.641, label: \"χ² の値\"})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nコードを表示\nchiTools = {\n  // 対数ガンマ関数（Lanczos近似）\n  function lgamma(z) {\n    const g = 7;\n    const c = [0.99999999999980993, 676.5203681218851, -1259.1392167224028,\n      771.32342877765313, -176.61502916214059, 12.507343278686905,\n      -0.13857109526572012, 9.9843695780195716e-6, 1.5056327351493116e-7];\n    if (z &lt; 0.5) return Math.log(Math.PI / Math.sin(Math.PI * z)) - lgamma(1 - z);\n    z -= 1;\n    let x = c[0];\n    for (let i = 1; i &lt; g + 2; i++) x += c[i] / (z + i);\n    const t = z + g + 0.5;\n    return 0.5 * Math.log(2 * Math.PI) + (z + 0.5) * Math.log(t) - t + Math.log(x);\n  }\n  // 正則化不完全ガンマ関数 P(a, x)\n  function gammaP(a, x) {\n    if (x &lt;= 0) return 0;\n    if (x &lt; a + 1) {\n      let sum = 1 / a, del = sum, ap = a;\n      for (let n = 1; n &lt; 500; n++) {\n        ap += 1; del *= x / ap; sum += del;\n        if (Math.abs(del) &lt; Math.abs(sum) * 1e-15) break;\n      }\n      return sum * Math.exp(-x + a * Math.log(x) - lgamma(a));\n    }\n    let b = x + 1 - a, c = 1e300, d = 1 / b, h = d;\n    for (let i = 1; i &lt; 500; i++) {\n      const an = -i * (i - a);\n      b += 2;\n      d = an * d + b; if (Math.abs(d) &lt; 1e-300) d = 1e-300;\n      c = b + an / c; if (Math.abs(c) &lt; 1e-300) c = 1e-300;\n      d = 1 / d;\n      const del = d * c;\n      h *= del;\n      if (Math.abs(del - 1) &lt; 1e-15) break;\n    }\n    return 1 - Math.exp(-x + a * Math.log(x) - lgamma(a)) * h;\n  }\n  // カイ二乗分布の確率密度\n  const pdf = (x, k) =&gt;\n    x &lt;= 0 ? 0 : Math.exp((k / 2 - 1) * Math.log(x) - x / 2 - (k / 2) * Math.log(2) - lgamma(k / 2));\n  // 右側の確率（P値）\n  const upper = (x, k) =&gt; 1 - gammaP(k / 2, x / 2);\n  // 臨界値（二分法）\n  const crit = (alpha, k) =&gt; {\n    let lo = 0, hi = 200;\n    for (let i = 0; i &lt; 100; i++) {\n      const m = (lo + hi) / 2;\n      if (upper(m, k) &gt; alpha) lo = m; else hi = m;\n    }\n    return (lo + hi) / 2;\n  };\n  return {pdf, upper, crit};\n}\n\npChi = chiTools.upper(chiC, dfC)\ncritChi = chiTools.crit(0.05, dfC)\n\nmd`自由度 ${dfC}　χ² = ${chiC.toFixed(3)}　**P値 = ${pChi.toFixed(3)}**　臨界値（5%）= ${critChi.toFixed(3)}　→　${pChi &lt; 0.05 ? \"有意水準5%で帰無仮説を**棄却します**\" : \"有意水準5%で帰無仮説を**棄却しません**\"}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nコードを表示\n{\n  const xs = d3.range(0.02, 20.001, 0.02);\n  const curve = xs.map(x =&gt; ({x: x, y: chiTools.pdf(x, dfC)}));\n  const tail = curve.filter(d =&gt; d.x &gt;= chiC);\n  return Plot.plot({\n    x: {domain: [0, 20], label: \"χ²\"},\n    y: {domain: [0, 0.6], label: \"確率密度\", grid: true},\n    marks: [\n      Plot.areaY(tail, {x: \"x\", y: \"y\", fill: \"#E36C09\", fillOpacity: 0.5, clip: true}),\n      Plot.line(curve, {x: \"x\", y: \"y\", stroke: \"steelblue\", strokeWidth: 2.5, clip: true}),\n      Plot.ruleX([critChi], {stroke: \"black\", strokeWidth: 1.5, strokeDasharray: \"4,3\"}),\n      Plot.ruleX([chiC], {stroke: \"#E36C09\", strokeWidth: 2}),\n      Plot.ruleY([0])\n    ]\n  });\n}\n\n\n\n\n\n\n\n\n\nオレンジの部分の面積がP値、黒の点線が有意水準5%の臨界値です。カイ二乗分布についての詳しい説明は、カイ二乗分布（統計学の時間）も参考にしてください。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#chi2-検定の計算と結論",
     "href": "lecB08.html#chi2-検定の計算と結論",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.5 \\(\\chi^2\\) 検定の計算と結論",
     "text": "21.5 \\(\\chi^2\\) 検定の計算と結論\n手順4：検定統計量と臨界値を比較する　手順5：検定の結論を出す\n例1\n\\[\n\\begin{aligned}\n\\chi^2 &= \\frac{(24 - 26)^2}{26} + \\frac{(26 - 24)^2}{24} + \\frac{(28 - 26)^2}{26} + \\frac{(22 - 24)^2}{24} \\\\\n&= 0.154 + 0.167 + 0.154 + 0.167 \\\\\n&= 0.641\n\\end{aligned}\n\\]\n\n自由度1、有意水準5%の臨界値：3.841\nP値：0.423\n\\(\\chi^2 = 0.641\\) は臨界値3.841より小さく、P値0.423は有意水準0.05より大きいので、帰無仮説は棄却されません。\n結論：「性別と猫が好きかどうかに関連があるとはいえない（有意水準5%）」となります。\n\n例2\n\\[\n\\begin{aligned}\n\\chi^2 &= \\frac{(14 - 15.75)^2}{15.75} + \\frac{(16 - 14.25)^2}{14.25} + \\frac{(28 - 26.25)^2}{26.25} + \\frac{(22 - 23.75)^2}{23.75} \\\\\n&= 0.194 + 0.215 + 0.117 + 0.129 \\\\\n&= 0.655\n\\end{aligned}\n\\]\n\n自由度1、有意水準5%の臨界値：3.841\nP値：0.418\n\\(\\chi^2 = 0.655\\) は臨界値3.841より小さく、P値0.418は有意水準0.05より大きいので、帰無仮説は棄却されません。\n結論：「性別と猫が好きかどうかに関連があるとはいえない（有意水準5%）」となります。\n\n\n\n\n\n\n\nNote\\(\\chi^2\\) 検定を使うときの注意\n\n\n\n\n期待値が小さいセル（目安として5未満）があると、\\(\\chi^2\\) の値がカイ二乗分布にうまく従わず、検定の結果が正確でなくなります。その場合は、カテゴリーをまとめる、標本を増やす、別の検定（フィッシャーの正確確率検定など）を使う、といった対応が必要です。\n\n参考：いちばんやさしい、医療統計（フィッシャーの正確確率検定とは？カイ二乗検定との違いをわかりやすく）\n\n\\(\\chi^2\\) 検定は、実測値（人数などの度数）を使って計算します。割合（%）のまま計算してはいけません。\n統計ソフトによっては、2行2列の表のときに「イェーツの補正」という調整を自動で行うため、エクセルの結果と少し異なる値が出ることがあります。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#エクセルでの-chi2-検定",
     "href": "lecB08.html#エクセルでの-chi2-検定",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.6 エクセルでの \\(\\chi^2\\) 検定",
     "text": "21.6 エクセルでの \\(\\chi^2\\) 検定\n例1のデータを、課題ファイルの「練習_1」と同じように、次のようにエクセルに入力したとします。\n\n\n\n\nB\nC\nD\nE\n\n\n\n\n4\n\n猫好き\n好きではない\n合計\n\n\n5\n男性\n24\n26\n=C5+D5\n\n\n6\n女性\n28\n22\n=C6+D6\n\n\n7\n合計\n=C5+C6\n=D5+D6\n=E5+E6\n\n\n\n期待値の表を作る\nその下（C12〜D13）に期待値の表を作ります。C12セルに次の式を入力し、C12〜D13にコピーします（「行の合計 × 列の合計 ÷ 全体の合計」を計算しています）。\n=$E5*C$7/$E$7\n関数で計算する\n\n\n\n\n\n\n\n\n求めるもの\nエクセルの式\n結果\n\n\n\n\nP値\n=CHISQ.TEST(C5:D6, C12:D13)\n0.423\n\n\n検定統計量 \\(\\chi^2\\)\n=SUMPRODUCT((C5:D6-C12:D13)^2/C12:D13)\n0.641\n\n\n臨界値（有意水準5%、自由度1）\n=CHISQ.INV.RT(0.05, 1)\n3.841\n\n\n\\(\\chi^2\\) の値からP値を求める\n=CHISQ.DIST.RT(0.641, 1)\n0.423\n\n\n\n\nCHISQ.TEST(実測値の範囲, 期待値の範囲)：P値を直接求めます。期待値の表は自動では作られないので、先に自分で作っておく必要があります。\nCHISQ.INV.RT(有意水準, 自由度)：右側の臨界値を求めます。\nCHISQ.DIST.RT(χ²の値, 自由度)：右側の確率（P値）を求めます。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#相関関係correlation",
     "href": "lecB08.html#相関関係correlation",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.7 相関関係（Correlation）",
     "text": "21.7 相関関係（Correlation）\n\n2つの変数 \\(x\\) と \\(y\\) があるときに、\\(x\\) の変化に伴って、\\(y\\) も変化するような関係を相関関係といいます。\n相関関係を調べるには、まずは散布図を確認します。\n相関関係は、正の相関関係、負の相関関係、無相関に分けられます。\n\n正の相関関係：\\(x\\) が大きいほど、\\(y\\) も大きい傾向があります（散布図が右肩上がり）。\n負の相関関係：\\(x\\) が大きいほど、\\(y\\) は小さい傾向があります（散布図が右肩下がり）。\n無相関：\\(x\\) と \\(y\\) に関係が見出せません。\n\n相関関係の正負と強さを表すのに、相関係数が使われます。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#散布図",
     "href": "lecB08.html#散布図",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.8 散布図",
     "text": "21.8 散布図\n\n\n\n\n\n\n\n\n図 21.1\n\n\n\n\n\n\n\n\n\n\n図 21.2\n\n\n\n\n\n\n\n\n\n\n図 21.3",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#相関係数correlation-coefficient",
     "href": "lecB08.html#相関係数correlation-coefficient",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.9 相関係数（correlation coefficient）",
     "text": "21.9 相関係数（correlation coefficient）\n2つの変数の関係の強さを、具体的な数値で表したものです。\n\\[\nr_{xy} = \\frac{s_{xy}}{s_x s_y} = \\frac{\\dfrac{1}{n}\\displaystyle\\sum_{i=1}^{n}(x_i - \\bar{x})(y_i - \\bar{y})}{\\sqrt{\\dfrac{1}{n}\\displaystyle\\sum_{i=1}^{n}(x_i - \\bar{x})^2}\\sqrt{\\dfrac{1}{n}\\displaystyle\\sum_{i=1}^{n}(y_i - \\bar{y})^2}} = \\frac{\\displaystyle\\sum_{i=1}^{n}(x_i - \\bar{x})(y_i - \\bar{y})}{\\sqrt{\\displaystyle\\sum_{i=1}^{n}(x_i - \\bar{x})^2}\\sqrt{\\displaystyle\\sum_{i=1}^{n}(y_i - \\bar{y})^2}}\n\\]\nここで、\\(s_{xy}\\) は \\(x\\) と \\(y\\) の共分散、\\(s_x\\) は \\(x\\) の標準偏差、\\(s_y\\) は \\(y\\) の標準偏差、\\(n\\) はデータの個数です。\n\n\\(r_{xy}\\) は \\(-1\\) から \\(1\\) までのいずれかの値をとります。\n\\(|r_{xy}|\\) が1に近いほど相関が強く、0に近いほど相関が弱くなります。\n\\(r_{xy}\\) は単位を持たない値であり、データの単位がどのようなものであっても計算できます。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#共分散",
     "href": "lecB08.html#共分散",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.10 共分散",
     "text": "21.10 共分散\n相関係数 \\(r_{xy}\\) の分子 \\(\\dfrac{1}{n}\\displaystyle\\sum_{i=1}^{n}(x_i - \\bar{x})(y_i - \\bar{y})\\) は共分散と呼ばれ、相関係数の符号（プラスかマイナスか）を決めます。\n\n平均の点 \\((\\bar{x}, \\bar{y})\\) を中心に散布図を4つの領域に分けると、右上と左下の領域の点では \\((x_i - \\bar{x})(y_i - \\bar{y})\\) が正に、左上と右下の領域の点では負になります。\n右上と左下に点が多ければ共分散は正（正の相関）、左上と右下に点が多ければ共分散は負（負の相関）になります。\n\n\n\n\n\n\n\n\n\n\n図 21.4",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#相関係数の例",
     "href": "lecB08.html#相関係数の例",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.11 相関係数の例",
     "text": "21.11 相関係数の例\n赤い線は、\\(x\\) の平均と \\(y\\) の平均を表しています。4つの領域のどこに点が多いかによって、相関係数の符号と大きさが決まることを確認してください。\n\n\n\n\n\n\n\n\n\n図 21.5\n\n\n\n\n\n\n\n\n\n\n\n\n図 21.6\n\n\n\n\n\n\n\n\n\n\n\n\n図 21.7",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#相関関係の強さ",
     "href": "lecB08.html#相関関係の強さ",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.12 相関関係の強さ",
     "text": "21.12 相関関係の強さ\n相関係数の値と相関の強さの目安は、次のとおりです。これはあくまで目安で、分野によって基準は異なります。\n\n\n\n相関係数の絶対値 \\(\\lvert r \\rvert\\)\n相関の強さ\n\n\n\n\n0 〜 0.2\nほぼなし\n\n\n0.2 〜 0.4\n弱い\n\n\n0.4 〜 0.7\nやや強い\n\n\n0.7 〜 1\n強い\n\n\n\n\n\n\n\n\n\n\n\n\n図 21.8\n\n\n\n参考：データの特徴を把握できる相関係数と相関分析を徹底解説！（DATA ANALYTICS LABO）",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#留意点-1-見せかけの相関擬似相関",
     "href": "lecB08.html#留意点-1-見せかけの相関擬似相関",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.13 留意点 1　見せかけの相関（擬似相関）",
     "text": "21.13 留意点 1　見せかけの相関（擬似相関）\n\nアイスの売り上げとビールの売り上げには、正の相関関係があります。しかし、アイスが売れるからビールが売れるわけではありません。\n\n実際には、気温（暑さ）が上がると、アイスの売り上げもビールの売り上げも上がります。\n\n小学校の数と床屋の数には、正の相関関係があります。しかし、小学校が減るから床屋が減るわけではありません。\n\n実際には、人口が減ると、小学校の数も床屋の数も減ります。\n\n\nこのように、2つの変数の両方に影響を与える第3の要因のことを交絡要因と呼びます。相関関係は、必ずしも因果関係を示していません。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#留意点-2-必ず散布図を確認する",
     "href": "lecB08.html#留意点-2-必ず散布図を確認する",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.14 留意点 2　必ず散布図を確認する",
     "text": "21.14 留意点 2　必ず散布図を確認する\n相関係数は、外れ値に影響されやすいです。下の図は、ほとんどの点が一直線に並んでいますが、右下の1つの点（外れ値）のために、相関係数が0.42まで小さくなっています。\n\n\n\n\n\n\n\n\n\n図 21.9\n\n\n\n相関係数が示すのは、2つの変数の直線（線形）的な関係の強さです。下の2つの図のように、\\(x\\) と \\(y\\) にははっきりとした関係があっても、それが直線的でなければ、相関係数は小さくなります。\n\n\n\n\n\n\n\n\n\n図 21.10\n\n\n\n\n\n\n\n\n\n\n\n\n図 21.11",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#相関係数の検定",
     "href": "lecB08.html#相関係数の検定",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.15 相関係数の検定",
     "text": "21.15 相関係数の検定\n標本から計算した相関係数 \\(r\\) が0でなくても、母集団では相関がない（母相関係数が0）かもしれません。そこで、母相関係数 \\(\\rho\\)（ロー）が0かどうかを検定します。\n手順1：仮説を設定する\n\n帰無仮説（\\(H_0\\)）：母相関係数 \\(\\rho = 0\\)（両変数の間には相関がない・無相関）\n対立仮説（\\(H_1\\)）：母相関係数 \\(\\rho \\neq 0\\)（両変数の間には相関がある）\n\n手順2：有意水準を決める（これで臨界値が決まる）\n有意水準は5%（両側検定）とします。\n手順3：検定統計量 \\(t\\) を求める\n\\(\\rho = 0\\) のとき、標本の相関係数 \\(r\\) から計算した次の統計量は、自由度 \\(n - 2\\) の \\(t\\) 分布に従います。\n\\[\nt = \\frac{r\\sqrt{n - 2}}{\\sqrt{1 - r^2}}\n\\]",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#相関係数の計算と検定の例",
     "href": "lecB08.html#相関係数の計算と検定の例",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.16 相関係数の計算と検定の例",
     "text": "21.16 相関係数の計算と検定の例\n例：10人の勉強時間とテストの点数\n\n\n\n学生\n勉強時間（時間） \\(x\\)\nテストの点数 \\(y\\)\n\n\n\n\n1\n1\n50\n\n\n2\n2\n62\n\n\n3\n2\n45\n\n\n4\n3\n58\n\n\n5\n4\n52\n\n\n6\n5\n70\n\n\n7\n5\n55\n\n\n8\n6\n64\n\n\n9\n7\n60\n\n\n10\n8\n72\n\n\n平均\n4.3\n58.8\n\n\n\n相関係数\n\n共分散：\\(s_{xy} = 12.26\\)\n勉強時間の標準偏差：\\(s_x = 2.193\\)\n点数の標準偏差：\\(s_y = 8.171\\)\n\n\\[\nr_{xy} = \\frac{s_{xy}}{s_x s_y} = \\frac{12.26}{2.193 \\times 8.171} = 0.684\n\\]\n相関係数は0.684なので、「やや強い正の相関」があるといえます。\n相関係数の検定\n手順4：検定統計量と臨界値を比較する　手順5：検定の結論を出す\n\\[\nt = \\frac{r\\sqrt{n - 2}}{\\sqrt{1 - r^2}} = \\frac{0.684 \\times \\sqrt{10 - 2}}{\\sqrt{1 - 0.684^2}} = \\frac{0.684 \\times 2.828}{0.729} = 2.653\n\\]\n\n自由度 \\(n - 2 = 8\\)、有意水準5%（両側）の臨界値：2.306\nP値（両側）：0.029\n\\(t = 2.653\\) は臨界値2.306より大きく、P値0.029は有意水準0.05より小さいので、帰無仮説は棄却されます。\n結論：「勉強時間とテストの点数の間には相関がある（有意水準5%）」となります。\n\n\n\n\n\n\n\nNote「有意」は「相関が強い」という意味ではない\n\n\n\n検定統計量 \\(t = \\dfrac{r\\sqrt{n - 2}}{\\sqrt{1 - r^2}}\\) は、\\(n\\) が大きいほど大きくなります。そのため、データの個数が多いと、小さな相関係数でも有意になります。例えば \\(n = 682\\) なら、\\(|r|\\) が0.075程度でも有意水準5%で有意です。検定の結果だけでなく、相関係数の大きさ（相関の強さ）も必ず確認しましょう。\n\n\n\n\n\n\n\n\nNote相関があっても、因果関係があるとは限らない\n\n\n\nこの例では、勉強時間とテストの点数に有意な正の相関がありました。しかし、これだけで「勉強時間を増やせば点数が上がる」とはいえません。例えば、もともとその科目が好きな学生ほど、勉強時間も長く、点数も高い、という交絡要因があるかもしれないからです（留意点 1）。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
     "objectID": "lecB08.html#エクセルでの相関分析",
     "href": "lecB08.html#エクセルでの相関分析",
-    "title": "21  (8) カイ二乗検定と相関分析",
+    "title": "21  (8) カイ二乗検定と相関",
     "section": "21.17 エクセルでの相関分析",
     "text": "21.17 エクセルでの相関分析\nA列（A2〜A11）に勉強時間、B列（B2〜B11）にテストの点数が入力されているとします（1行目は見出しとします）。\n関数で計算する\n\n\n\n\n\n\n\n\n求めるもの\nエクセルの式\n結果\n\n\n\n\n相関係数 \\(r\\)\n=CORREL(A2:A11, B2:B11)\n0.684\n\n\n共分散 \\(s_{xy}\\)\n=COVARIANCE.P(A2:A11, B2:B11)\n12.26\n\n\n勉強時間の標準偏差 \\(s_x\\)\n=STDEV.P(A2:A11)\n2.193\n\n\n点数の標準偏差 \\(s_y\\)\n=STDEV.P(B2:B11)\n8.171\n\n\n検定統計量 \\(t\\)（相関係数をD2セルに入れた場合）\n=D2*SQRT(10-2)/SQRT(1-D2^2)\n2.653\n\n\n臨界値（両側・有意水準5%、自由度8）\n=T.INV.2T(0.05, 8)\n2.306\n\n\nP値（両側）\n=T.DIST.2T(ABS(2.653), 8)\n0.029\n\n\n\n\nCORREL 関数の代わりに PEARSON 関数を使っても、同じ値になります。\n相関係数の式は、分子と分母の両方を \\(n\\) で割っているので、COVARIANCE.S と STDEV.S（\\(n - 1\\) で割るもの）の組み合わせで計算しても、同じ相関係数になります。\n\n分析ツールの「相関」を使う方法\n\n「データ」→「データ分析」→「相関」を選びます。\n「入力範囲」に A1:B11 を指定し、「先頭行をラベルとして使用」にチェックを入れます。\n出力先を指定して「OK」を押すと、相関係数の表（相関行列）が出力されます。\n\n\n相関行列の対角線上（同じ変数どうし）はすべて1になり、それ以外のところに2つの変数の相関係数（ここでは0.684）が表示されます。\n3つ以上の変数を選ぶと、すべての組み合わせの相関係数を一度に求められます。\nただし、分析ツールの「相関」ではP値は出力されないので、相関係数の検定は、上の表のように \\(t\\) 値とP値を自分で計算します。",
     "crumbs": [
       "後期（B）",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関分析</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>(8) カイ二乗検定と相関</span>"
     ]
   },
   {
